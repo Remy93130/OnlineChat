@@ -1,7 +1,7 @@
 {
   "name": "try",
   "version": "1.0.0",
-  "description": "",
+  "description": "Just a simple test",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,8 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ent": "^2.2.0",
     "express": "^4.16.3",
     "npm": "^6.4.0",
+    "socket.io": "^2.1.1",
     "twig": "^1.12.0"
   }
 }

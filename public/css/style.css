@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body {
+	background-image: url("../images/background.png");
+}
+
+a {
+	color: #365899;
+}
+
+a:hover {
+	color: #365899;
+}
+
 h1 {
-	color: red;
+	font-family: 'Lobster', cursive;
+	font-size: 54px;
+}
+
+#users_online {
+	list-style-type: none;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+h1 {
+	margin-top: 1%;
+}
+
+#app {
+	display: none;
+	margin-top: 3%;
+	padding-bottom: 5%;
+}
+
+.fixed-bottom {
+	margin-left: 33%;
+	padding-right: 66%;
+}
+
+.btn-outline-secondary {
+	background-color: #FFF;
 }

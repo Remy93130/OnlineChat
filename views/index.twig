@@ -1,10 +1,62 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hello</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<h1>Hello {{ name }}</h1>
-</body>
-</html>
+{% extends 'template.twig' %}
+
+{% block stylesheets %}
+	{{ parent() }}
+{% endblock %}
+{% block title %}Index{% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+	<div class="row" id="create_pseudo">
+		<div class="col-md-6 offset-md-3">
+			<form id="confirm_pseudo">
+				<div class="input-group mb-3">
+					<input type="text" class="form-control" placeholder="Your pseudo" id="init_pseudo">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="submit">Confirm</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row" id="app">
+		<div class="col-md-3">
+			<h2>Online:</h2>
+			<ul id="users_online">
+				
+			</ul>
+		</div>
+
+		<div class="col-md-6">
+			<div class="list-group" id="chat">
+			</div>
+			<form id="confirm_message">
+				<div class="input-group mb-3 fixed-bottom">
+					<input type="text" class="form-control" placeholder="Your message" id="message">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="submit" id="send_message">Confirm</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="col-md-2 offset-md-1">
+			<h2>Options:</h2><br>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="sound">
+				<label class="form-check-label" for="sound">
+					Sound on message
+				</label><br><br>
+				<button class="btn btn-danger" id="wipe_messages">Wipe messages</button>
+			</div>
+		</div>
+	</div>
+</div>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Back to top" data-toggle="tooltip" data-placement="left"><i class="fas fa-chevron-up"></i></a>
+
+{% endblock %}
+
+{% block scripts %}
+	{{ parent() }}
+	<script src="js/chat.js"></script>
+{% endblock %}
