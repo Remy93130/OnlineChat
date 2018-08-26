@@ -33,7 +33,7 @@ io.on('connection', (socket) => {
 			content: socket.username + " joined.",
 			users: userLogged
 		})
-		console.log("Users online: "userLogged)
+		console.log("Users online: " + userLogged)
 	})
 
 	socket.on('end_user', () => {
@@ -45,7 +45,7 @@ io.on('connection', (socket) => {
 			content: socket.username + " left",
 			users: userLogged
 		})
-		console.log("Users online: "userLogged)
+		console.log("Users online: " + userLogged)
 	})
 
 	socket.on('new_message', (data) => {
