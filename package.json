@@ -1,14 +1,17 @@
 {
-  "name": "try",
+  "name": "MyChat",
   "version": "1.0.0",
-  "description": "Just a simple test",
+  "description": "Simple online chat",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Rémy Barberet",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Remy93130/OnlineChat"
+  }
   "dependencies": {
     "ent": "^2.2.0",
     "express": "^4.16.3",
